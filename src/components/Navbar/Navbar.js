@@ -35,7 +35,7 @@ const Navbar = () => {
           className="font-semibold text-2xl flex items-center 
       text-sky-500"
         >
-          Analyzent
+          <Link to="/">Analyzent</Link>
         </div>
 
         <div
