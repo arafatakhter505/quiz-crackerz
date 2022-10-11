@@ -7,7 +7,7 @@ import Quiz from "../Quiz/Quiz";
 const TopicDetails = () => {
   const details = useLoaderData();
   const { name, questions } = details.data;
-  const notify = (msg) => toast(msg);
+  const handleClick = (msg) => toast(msg);
 
   return (
     <div className="mt-28">
@@ -16,7 +16,11 @@ const TopicDetails = () => {
       </h2>
       <div>
         {questions.map((question) => (
-          <Quiz key={question.id} quiz={question} handleEye={notify}></Quiz>
+          <Quiz
+            key={question.id}
+            quiz={question}
+            handleClick={handleClick}
+          ></Quiz>
         ))}
       </div>
       <ToastContainer></ToastContainer>
