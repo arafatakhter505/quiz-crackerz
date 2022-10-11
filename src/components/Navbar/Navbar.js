@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className="md:flex items-center justify-between bg-white py-4 md:px-20 px-7">
         <div
           className="font-semibold text-2xl flex items-center 
-      text-sky-700"
+      text-sky-500"
         >
           Analyzent
         </div>

@@ -4,7 +4,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Topic = ({ topic }) => {
-  const { id, logo, name, total, handleStart } = topic;
+  const { id, logo, name, total } = topic;
   return (
     <div className="shadow-lg p-5 border-2 rounded-lg">
       <div className="bg-sky-100">
@@ -15,7 +15,7 @@ const Topic = ({ topic }) => {
         <p>Quiz: {total}</p>
       </div>
       <div className="mt-8">
-        <Link onClick={() => handleStart(id)}>
+        <Link to={`/quiz/${id}`}>
           <button className="bg-sky-500 rounded-lg text-white py-2 px-3 w-full">
             Start Practice <FontAwesomeIcon icon={faPlay}></FontAwesomeIcon>
           </button>
