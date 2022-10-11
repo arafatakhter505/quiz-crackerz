@@ -1,10 +1,13 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Quiz from "../Quiz/Quiz";
 
 const TopicDetails = () => {
   const details = useLoaderData();
   const { name, questions } = details.data;
+  const notify = (msg) => toast(msg);
 
   return (
     <div className="mt-28">
@@ -13,9 +16,10 @@ const TopicDetails = () => {
       </h2>
       <div>
         {questions.map((question) => (
-          <Quiz key={question.id} quiz={question}></Quiz>
+          <Quiz key={question.id} quiz={question} handleEye={notify}></Quiz>
         ))}
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };

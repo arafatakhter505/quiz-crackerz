@@ -2,13 +2,16 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 
-const Quiz = ({ quiz }) => {
-  const { question, correctAnswer, options } = quiz;
-  console.log(options);
+const Quiz = ({ quiz, handleEye }) => {
+  const { question, options, correctAnswer } = quiz;
+  console.log(correctAnswer);
 
   return (
     <div className="shadow-md border-2 md:p-8 p-5 md:w-3/5 w-4/5 my-12 mx-auto">
-      <div className="cursor-pointer text-right md:text-2xl">
+      <div
+        className="cursor-pointer text-right md:text-2xl"
+        onClick={() => handleEye(correctAnswer)}
+      >
         <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
       </div>
       <h3 className="md:text-2xl font-semibold">{question}</h3>
