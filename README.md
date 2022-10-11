@@ -6,8 +6,9 @@ This project is created by React JS.
 
 Live website link: [www.google.com](www.google.com)
 
-## Project Description:
+## Project Description
 
+Markup:
 *This project is using tailwindcss framework.
 *This project is using tailwindcss framework.
 \*This project is using tailwindcss framework.
