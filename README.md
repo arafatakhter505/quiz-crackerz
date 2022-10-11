@@ -4,7 +4,7 @@ This project is created by React JS.
 
 ## Project Name Analyzent
 
-Live website link: [www.google.com](www.google.com)
+Live website link: [https://jocular-wisp-af65c3.netlify.app/](https://jocular-wisp-af65c3.netlify.app/)
 
 ## Project Description:
 
