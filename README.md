@@ -6,10 +6,9 @@ This project is created by React JS.
 
 Live website link: [www.google.com](www.google.com)
 
-## Project Description
-
-Markup:
+## Project Description:
 
 - This project is using tailwindcss framework.
-- This project is using tailwindcss framework.
-- This project is using tailwindcss framework.
+- This is a quiz playing website.
+- Click start practice button then play quiz.
+- Click eye button then show quiz right answer.
